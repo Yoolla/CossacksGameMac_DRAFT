@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C6BD26D1BF3580000A1C4C4 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BD26C1BF3580000A1C4C4 /* Game.m */; };
 		D404B2A81BAD8381008C1160 /* GoalKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = D404B2A71BAD8381008C1160 /* GoalKeeper.m */; };
 		D404B2AF1BADACAD008C1160 /* GameField.m in Sources */ = {isa = PBXBuildFile; fileRef = D404B2AE1BADACAD008C1160 /* GameField.m */; };
 		D404B2B41BAE9C48008C1160 /* goal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D404B2B21BAE9C48008C1160 /* goal.mp3 */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C6BD26B1BF3580000A1C4C4 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		5C6BD26C1BF3580000A1C4C4 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		D404B2A61BAD8381008C1160 /* GoalKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalKeeper.h; sourceTree = "<group>"; };
 		D404B2A71BAD8381008C1160 /* GoalKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalKeeper.m; sourceTree = "<group>"; };
 		D404B2AD1BADACAD008C1160 /* GameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameField.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				D46A96161BAD39A10096A542 /* Ball.m */,
 				D404B2A61BAD8381008C1160 /* GoalKeeper.h */,
 				D404B2A71BAD8381008C1160 /* GoalKeeper.m */,
+				5C6BD26B1BF3580000A1C4C4 /* Game.h */,
+				5C6BD26C1BF3580000A1C4C4 /* Game.m */,
 				D47D5FB01BA96B3A00086C62 /* AppDelegate.h */,
 				D47D5FB11BA96B3A00086C62 /* AppDelegate.m */,
 				D47D5FB51BA96B3A00086C62 /* Images.xcassets */,
@@ -184,7 +189,7 @@
 		D47D5FA31BA96B3A00086C62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Oleksandr Iolkin";
 				TargetAttributes = {
 					D47D5FAA1BA96B3A00086C62 = {
@@ -244,6 +249,7 @@
 				D47D5FB41BA96B3A00086C62 /* main.m in Sources */,
 				D47D5FB21BA96B3A00086C62 /* AppDelegate.m in Sources */,
 				D404B2AF1BADACAD008C1160 /* GameField.m in Sources */,
+				5C6BD26D1BF3580000A1C4C4 /* Game.m in Sources */,
 				D404B2A81BAD8381008C1160 /* GoalKeeper.m in Sources */,
 				D46A96171BAD39A10096A542 /* Ball.m in Sources */,
 			);
@@ -300,6 +306,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -365,6 +372,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CossacksGameMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iolkin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -376,6 +384,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CossacksGameMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iolkin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -395,6 +404,7 @@
 				);
 				INFOPLIST_FILE = CossacksGameMacTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iolkin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CossacksGameMac.app/Contents/MacOS/CossacksGameMac";
 			};
@@ -411,6 +421,7 @@
 				);
 				INFOPLIST_FILE = CossacksGameMacTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iolkin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CossacksGameMac.app/Contents/MacOS/CossacksGameMac";
 			};
